@@ -15,6 +15,8 @@
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-7xl: 4.5rem;
@@ -173,11 +175,26 @@
   }
 }
 @layer utilities {
+  .order-2 {
+    order: 2;
+  }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
+  }
+  .m-10 {
+    margin: calc(var(--spacing) * 10);
+  }
   .m-auto {
     margin: auto;
   }
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -197,8 +214,20 @@
   .mt-70 {
     margin-top: calc(var(--spacing) * 70);
   }
+  .mr-5 {
+    margin-right: calc(var(--spacing) * 5);
+  }
+  .mr-7 {
+    margin-right: calc(var(--spacing) * 7);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
@@ -208,6 +237,15 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .mb-\[47\] {
+    margin-bottom: 47;
+  }
+  .mb-\[47px\] {
+    margin-bottom: 47px;
+  }
+  .mb-\[60\] {
+    margin-bottom: 60;
   }
   .mb-\[109px\] {
     margin-bottom: 109px;
@@ -230,6 +268,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
@@ -247,6 +288,9 @@
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[90\] {
+    width: 90;
   }
   .w-\[326\] {
     width: 326;
@@ -266,6 +310,9 @@
   .resize {
     resize: both;
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .content-stretch {
     align-content: stretch;
   }
@@ -284,6 +331,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -292,8 +342,24 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-\[\#402F2C\] {
+    border-color: #402F2C;
+  }
+  .border-\[\#685A5230\] {
+    border-color: #685A5230;
+  }
   .border-\[\#EEEEEE\] {
     border-color: #EEEEEE;
+  }
+  .border-b-black {
+    border-bottom-color: var(--color-black);
+  }
+  .bg-\[\#402F2C\] {
+    background-color: #402F2C;
   }
   .bg-\[\#555555\] {
     background-color: #555555;
@@ -317,6 +383,9 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
@@ -325,6 +394,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -347,6 +419,10 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
@@ -355,11 +431,32 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .text-\[56px\] {
     font-size: 56px;
   }
   .text-\[\#000000\] {
     color: #000000;
+  }
+  .text-\[\#402F2C\] {
+    color: #402F2C;
+  }
+  .text-\[\#2222\] {
+    color: #2222;
+  }
+  .text-\[\#5555\] {
+    color: #5555;
+  }
+  .text-\[\#222222\] {
+    color: #222222;
   }
   .text-\[\#555555\] {
     color: #555555;
@@ -372,6 +469,9 @@
   }
   .text-amber-400 {
     color: var(--color-amber-400);
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
