@@ -214,6 +214,9 @@
   .mt-70 {
     margin-top: calc(var(--spacing) * 70);
   }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -367,6 +370,9 @@
   .bg-\[\#F9F6F5\] {
     background-color: #F9F6F5;
   }
+  .bg-\[\#FDF8F5\] {
+    background-color: #FDF8F5;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -419,6 +425,12 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -443,6 +455,10 @@
   .text-\[56px\] {
     font-size: 56px;
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .text-\[\#000000\] {
     color: #000000;
   }
@@ -460,6 +476,9 @@
   }
   .text-\[\#555555\] {
     color: #555555;
+  }
+  .text-\[\#5555555\] {
+    color: #5555555;
   }
   .text-\[\#\] {
     color: #;
@@ -532,6 +551,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -541,6 +564,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
