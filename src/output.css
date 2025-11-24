@@ -19,6 +19,8 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-medium: 500;
@@ -308,6 +310,9 @@
   .h-\[20vh\] {
     height: 20vh;
   }
+  .w-\[0px\] {
+    width: 0px;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -325,6 +330,18 @@
   }
   .w-\[330px\] {
     width: 330px;
+  }
+  .w-\[386px\] {
+    width: 386px;
+  }
+  .w-\[390px\] {
+    width: 390px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[4000px\] {
+    width: 4000px;
   }
   .w-full {
     width: 100%;
@@ -386,6 +403,9 @@
   .border-\[\#EEEEEE\] {
     border-color: #EEEEEE;
   }
+  .border-b-\[\#DDDDDD\] {
+    border-bottom-color: #DDDDDD;
+  }
   .border-b-black {
     border-bottom-color: var(--color-black);
   }
@@ -397,6 +417,9 @@
   }
   .bg-\[\#F9F6F5\] {
     background-color: #F9F6F5;
+  }
+  .bg-\[\#FAFAFA\] {
+    background-color: #FAFAFA;
   }
   .bg-\[\#FDF8F5\] {
     background-color: #FDF8F5;
@@ -423,6 +446,9 @@
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -437,6 +463,9 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -456,12 +485,19 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .text-center {
     text-align: center;
   }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-7xl {
     font-size: var(--text-7xl);
@@ -520,6 +556,9 @@
   }
   .text-\[\#\] {
     color: #;
+  }
+  .text-\[36p\] {
+    color: 36p;
   }
   .text-\[56\] {
     color: 56;
