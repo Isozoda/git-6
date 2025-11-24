@@ -21,6 +21,7 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -226,6 +227,12 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -238,8 +245,14 @@
   .mb-\[10\+\] {
     margin-bottom: 10+;
   }
+  .mb-\[10px\] {
+    margin-bottom: 10px;
+  }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .mb-\[43px\] {
+    margin-bottom: 43px;
   }
   .mb-\[47\] {
     margin-bottom: 47;
@@ -247,8 +260,14 @@
   .mb-\[47px\] {
     margin-bottom: 47px;
   }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
   .mb-\[60\] {
     margin-bottom: 60;
+  }
+  .mb-\[79px\] {
+    margin-bottom: 79px;
   }
   .mb-\[109px\] {
     margin-bottom: 109px;
@@ -261,6 +280,9 @@
   }
   .mb-\[172px\] {
     margin-bottom: 172px;
+  }
+  .mb-\[799px\] {
+    margin-bottom: 799px;
   }
   .ml-60 {
     margin-left: calc(var(--spacing) * 60);
@@ -316,6 +338,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
   .content-stretch {
     align-content: stretch;
   }
@@ -336,6 +361,9 @@
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -459,8 +487,15 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
   .text-\[\#000000\] {
     color: #000000;
+  }
+  .text-\[\#0000000\] {
+    color: #0000000;
   }
   .text-\[\#402F2C\] {
     color: #402F2C;
@@ -470,6 +505,9 @@
   }
   .text-\[\#5555\] {
     color: #5555;
+  }
+  .text-\[\#22222\] {
+    color: #22222;
   }
   .text-\[\#222222\] {
     color: #222222;
