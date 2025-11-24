@@ -220,6 +220,12 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-\[38px\] {
+    margin-top: 38px;
+  }
+  .mt-\[59px\] {
+    margin-top: 59px;
+  }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -252,6 +258,12 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
+  }
+  .mb-\[39\] {
+    margin-bottom: 39;
+  }
+  .mb-\[39px\] {
+    margin-bottom: 39px;
   }
   .mb-\[43px\] {
     margin-bottom: 43px;
@@ -443,6 +455,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .p-15 {
+    padding: calc(var(--spacing) * 15);
+  }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
   }
@@ -485,6 +500,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
@@ -506,6 +524,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[24px\] {
     font-size: 24px;
@@ -544,6 +565,9 @@
   }
   .text-\[\#22222\] {
     color: #22222;
+  }
+  .text-\[\#55555\] {
+    color: #55555;
   }
   .text-\[\#222222\] {
     color: #222222;
